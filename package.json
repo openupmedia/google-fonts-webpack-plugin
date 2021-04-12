@@ -19,10 +19,13 @@
   ],
   "scripts": {
     "test": "mocha --timeout 5000 spec --colors",
+    "lint": "eslint .",
     "watch": "mocha --timeout 5000 spec --colors --watch"
   },
   "devDependencies": {
-    "eslint": "^5.0.1",
+    "@beyonk/eslint-config": "^5.0.2",
+    "eslint": "^7.24.0",
+    "eslint-plugin-mocha": "^8.1.0",
     "memory-fs": "^0.4.1",
     "mocha": "^5.2.0",
     "should": "^13.2.1",
