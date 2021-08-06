@@ -38,7 +38,7 @@ function getVariantCss({ variant, info, font, formats, display, fontsPath, noLoc
 		if(ext in info) {
 			const url = (
 				typeof fontsPath !== "undefined" ?
-				`./${fontsPath}/${font.getName(variant)}.${ext}` :
+				`${fontsPath}/${font.getName(variant)}.${ext}` :
 				info[ext]
 			)
 			const format = FontTypes[ext]
